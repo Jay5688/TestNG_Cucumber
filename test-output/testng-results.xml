@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-19T12:55:58 IST" name="Default suite" finished-at="2023-01-19T12:56:12 IST" duration-ms="13960">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.Cucumber_Runner@2796aeae]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-01-19T12:55:58 IST" name="Default test" finished-at="2023-01-19T12:56:12 IST" duration-ms="13960">
+      <class name="testRunner.Cucumber_Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.Cucumber_Runner@2796aeae]" started-at="2023-01-19T12:55:58 IST" name="setUpClass" finished-at="2023-01-19T12:55:59 IST" duration-ms="775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b560eb0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.Cucumber_Runner@2796aeae]" started-at="2023-01-19T12:55:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-19T12:56:11 IST" duration-ms="12336" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for Hotel"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Title of your feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Hello [Jayakishore]!> but was:<Hello [test]!>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<Hello [Jayakishore]!> but was:<Hello [test]!>
+at org.junit.Assert.assertEquals(Assert.java:117)
+at org.junit.Assert.assertEquals(Assert.java:146)
+at stepDefinition.Stepsof_Featurefile.user_is_traversed_to_search_hotel_page(Stepsof_Featurefile.java:89)
+at ✽.user is traversed to Search Hotel page(file:///C:/Users/Jayakishore.V/eclipse-workspace/TestNG_Cucumber/Features/Login_Search.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.Cucumber_Runner@2796aeae]" started-at="2023-01-19T12:56:11 IST" name="tearDownClass" finished-at="2023-01-19T12:56:12 IST" duration-ms="779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.Cucumber_Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
